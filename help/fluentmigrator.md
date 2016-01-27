@@ -32,7 +32,7 @@ Usually your FAKE setup will look as follows:
     )
 
     Target "MigrateDatabase" (fun _ 
-        MigrateToLatest connection [assembly] options
+        MigrateToLatest connection assemblies options
     )
 
     "Build" ==> "MigrateDatabase"
